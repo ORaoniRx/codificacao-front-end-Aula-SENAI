@@ -66,6 +66,6 @@ Cenário: temperatura_atual = 0.
 Expressão: temperatura_atual <= 0
 
 Pergunta: O alerta será disparado?
-Resposta: False 
-Explicação da resposta: É falso pois ele quer saber se é menor que zero e nesse caso é 0.
+Resposta: Verdadeiro
+Explicação da resposta: É Verdadeiro pois ele está verificando se é menor ou igual a zero.
 ```
