@@ -1,0 +1,62 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Tamanho base padrão: 16px [1] */
+}
+
+/* CONTAINER FIXO - O principal alvo da conversão [3, 14] */
+.container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    gap: 1.5rem;
+    margin: 0 auto;
+    width: 960px; /* Alvo: 960px. Contexto: largura da tela. Converter para % [15] */
+}
+
+h1 {
+    font-size: 32px; /* Converter para EM/REM (32/16 = 2em) [16, 17] */
+}
+
+.content {
+    display: flex;
+    margin: 15px 0; /* Converter para % com base nos 960px do pai [17, 18] */
+}
+
+.last-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* POSICIONAMENTO COM FLOATS (ESTILO ANTIGO) [14, 19] */
+.content-main {
+    float: left;
+    width: 600px; /* Alvo: 600px. Contexto: 960px do container [19] */
+}
+
+.content-sidebar {
+    float: right;
+    width: 320px; /* Alvo: 320px. Contexto: 960px do container [20] */
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* ITENS DO MENU COM LARGURA FIXA [11, 21] */
+.main-nav li {
+    list-style: none;
+    width: 130px; /* Alvo: 130px. Contexto: 320px da sidebar [21] */
+    background: #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.main-footer {
+    clear: both;
+    padding: 15px;
+    text-align: center;
+    background: #eee;
+}
