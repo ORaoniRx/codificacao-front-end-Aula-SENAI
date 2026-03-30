@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.CSS">
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="logo">FlexPortal</div>
+        <nav class="nav-links">
+            <button class="nav-btn active" data-page="home">Inicio</button>
+            <button class="nav-btn" data-page="projetos">Projetos</button>
+            <button class="nav-btn" data-page="equipe">Equipe</button>
+        </nav>
+
+        <div class="user-profile">User</div>
+    </header>
+
+    <main class="content-main">
+
+        <section id="home" class="page-section active">
+            <h2>Bem-Vindo ao Inicio</h2>
+            <p>Selecione um botão lá em cima.</p>
+
+
+            <div class="start-cards">
+                <div class="start-card">Atividades: 15</div>
+                <div class="start-card">Alertas: 4</div>
+                <div class="start-card">Mensagem: 8</div>
+            </div>
+        </section>
+
+        <section id="projetos" class="page-section">
+            <h2>Lista de projetos</h2>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <h3>Projeto 1</h3>
+                    <p>Status: Concluído</p>
+                    <button class="view-btn">Ver Detalhes</button>
+                </div>
+                <div class="project-item">
+                    <h3>Projeto 2</h3>
+                    <p>Status: Em Andamento</p>
+                    <button class="view-btn">Ver Detalhes</button>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="equipe" class="page-section">
+            <h2>Nossa Equipe</h2>
+            <div class="team-list">
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <h4>Raoni Ramos</h4>
+                        <p>Desenvolvedor back-end</p>
+                    </div>
+
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <h4>Gustavo Henrique</h4>
+                        <p>Youtuber</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="avatar"></div>
+                    <div class="info">
+                        <h4>Arthur Teste</h4>
+                        <p>Desenvolvedor front-end</p>
+                    </div>
+                </div>
+
+
+                </div>
+        </section>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
