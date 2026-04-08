@@ -12,27 +12,33 @@
 
     <p>digite um numero</p>
     <input type="number" id="numero">
-    <button>Calcular</button>
+    <button onclick="calcular()">Calcular</button>
 
     <h2>Resultados aqui</h2>
-    <span id="abs"></span>
-    <span id="cell"></span>
-    <span id="floor"></span>
-    <span id="round"></span>
-    <span id="sqrt"></span>
-    <span id="pow"></span>
-    <span id="random"></span>
+    <p id="abs"></p>
+    <p id="ceil"></p>
+    <p id="floor"></p>
+    <p id="round"></p>
+    <p id="sqrt"></p>
+    <p id="pow"></p>
+    <p id="random"></p>
 
     <script>
-        function calcular () {
+        function calcular (){
             let num = Number(document.getElementById('numero').value);
 
             document.getElementById("abs").textContent = `Valor absoluto: ${Math.abs(num)}`;
-            document.getElementById("cell").textContent = `Arredondado para cima: ${Math.cell(num)}`;
+
+            document.getElementById("ceil").textContent = `Arredondado para cima: ${Math.ceil(num)}`;
+
             document.getElementById("floor").textContent = `Arredondando para baixo: ${Math.floor(num)}`;
+
             document.getElementById("round").textContent = `Arredondado: ${Math.round(num)}`;
+
             document.getElementById("sqrt").textContent = `Raiz Quadrada: ${Math.sqrt(num)}`;
+
             document.getElementById("pow").textContent = `Elevado ao Quadrado: ${Math.pow(num, 2)}`;
+
             document.getElementById("random").textContent = `Número aleatório: ${Math.random()}`;
 
             
