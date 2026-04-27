@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h1>Valores dos produtos.</h1>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button id="soma">Somar</button>
+
+        <button id="valorB">Ver Produto</button>
+
+
+    </main>
+
+
+    <script>
+        window.alert('Boas-Vindas a Lojinha!');
+
+        document.getElementById('soma').addEventListener('click', function () {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            const somar = num1 + num2;
+            const newElement = document.createElement('div');
+            newElement.textContent = `O Valor da compra é: ${somar}`;
+            document.body.appendChild(newElement);
+        });
+
+        let valorBooleano = false;
+        function valorBooleanoBtn(valorBooleano) {
+            if (valorBooleano = true) {
+                const newElement = document.createElement('div');
+                newElement.textContent = `Produto em promoção`;
+                document.body.appendChild(newElement);
+            } else {
+                const newElement = document.createElement('div');
+                newElement.textContent = `Produto em preço normal`;
+                document.body.appendChild(newElement);
+            }
+        };
+
+        document.getElementById('valorB').addEventListener('click', valorBooleanoBtn());
+
+    </script>
+</body>
+
+</html>
