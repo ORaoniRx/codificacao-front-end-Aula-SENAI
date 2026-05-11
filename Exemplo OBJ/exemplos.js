@@ -50,3 +50,15 @@ console.log(Object.keys(usuario));
 
 //valores ai
 console.log(Object.values(usuario));
+
+//entries
+
+console.log(Object.entries(usuario));
+
+/*
+[
+    {"nome", "ana"},
+    {"idade", 20},
+    {"ativo", true}
+]
+*/
