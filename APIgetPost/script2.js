@@ -24,5 +24,13 @@ function buscarComentarios() {
             </div>
             `
         });
+
+
     })
+
+    .catch(erro => {
+        alert("erro ao buscar comentários!");
+
+        console.log(erro);
+    });
 }
